@@ -3,7 +3,7 @@
 import "../styles/global.css";
 
 // Components
-import Navigation from "./components/Navigation.astro";
+import Navigation from "../components/Navigation.astro";
 
 const pageTitle = "My Astro Learning Blog";
 ---
@@ -17,6 +17,7 @@ const pageTitle = "My Astro Learning Blog";
     <title>{pageTitle}</title>
   </head>
   <body>
+    <Navigation />
     <h1>{pageTitle}</h1>
     <p>
       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, sapiente.
