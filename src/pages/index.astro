@@ -1,5 +1,9 @@
 ---
+// Stylesheets
 import "../styles/global.css";
+
+// Components
+import Navigation from "./components/Navigation.astro";
 
 const pageTitle = "Home Page";
 ---
@@ -13,6 +17,7 @@ const pageTitle = "Home Page";
     <title>{pageTitle}</title>
   </head>
   <body>
+    <Navigation />
     <h1>{pageTitle}</h1>
   </body>
 </html>
