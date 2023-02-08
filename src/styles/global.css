@@ -21,6 +21,13 @@ h1 {
   font-size: 2.5rem;
 }
 
+/* Skill list */
+.skill {
+  color: var(--skillColor);
+  font-weight: var(--fontWeight);
+  text-transform: var(--textCase);
+}
+
 /* Nav */
 .hamburger {
   padding-right: 20px;
