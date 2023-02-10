@@ -1,11 +1,8 @@
 ---
-import BaseLayout from "./BaseLayout.astro";
+// Props so components can use
+const { title, url } = Astro.props;
 ---
 
-<BaseLayout>
-  <li>
-    <a href="">
-      <slot />
-    </a>
-  </li>
-</BaseLayout>
+<li>
+  <a href={url}>{title}</a>
+</li>
