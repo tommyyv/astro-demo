@@ -1,0 +1,17 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Test from "../components/Test.astro";
+
+const pageTitle = "test foods";
+const foods = ["cookies", "hamburgers"];
+const hobbies = ["idk", "sleep", "eating"];
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <ul>
+    {foods.map((food) => <Test foods={food} />)}
+  </ul>
+  <ul>
+    {hobbies.map((hobby) => <Test hobbies={hobby} />)}
+  </ul>
+</BaseLayout>
